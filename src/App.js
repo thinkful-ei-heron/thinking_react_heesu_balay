@@ -5,6 +5,7 @@ import Summary from './Components/Summary'
 
 
 
+
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
 import './App.css';
@@ -60,7 +61,6 @@ class App extends Component {
         <main>
           <CustomizeForm currency={USCurrencyFormat} features={this.props.features} state={this.state} updateFeature={this.updateFeature}/>
           <Summary currency={USCurrencyFormat} total={USCurrencyFormat.format(total)} state={this.state}/>
-
         </main>
       </div>
     );
